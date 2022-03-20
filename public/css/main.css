@@ -1,16 +1,19 @@
 /* Misc */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Sansita+Swashed:wght@300&family=Shippori+Antique+B1&display=swap");
 .theme {
   --bg-color: #f2f2f2;
   --font-color: #2b2b2b;
   --icon-color: #2b2b2b;
   --nav-color: #161625;
-  --nav-font-color: #f2f2f2; }
+  --nav-font-color: #f2f2f2;
+  --transparent: rgba(255, 255, 255, 0.8); }
   .theme--dark {
     --font-color: #e1e1ff;
     --bg-color: #161625;
     --icon-color: #f2f2f2;
     --nav-color: #f2f2f2;
-    --nav-font-color: #2b2b2b; }
+    --nav-font-color: #2b2b2b;
+    --transparent: rgba(22, 22, 37, 0.8); }
 
 *,
 *::after,
@@ -23,7 +26,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--bg-color) !important;
   color: var(--font-color) !important; }
 
@@ -31,7 +34,7 @@ body {
   display: grid;
   grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside works works works" "aside footer footer footer";
   grid-template-columns: 4em;
-  grid-template-rows: 40% 5rem 1fr 1fr; }
+  grid-template-rows: 40% 5rem 1fr 1fr 1fr; }
 
 aside {
   grid-area: aside;
@@ -65,7 +68,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #home {
-    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "footer footer footer footer";
+    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "works works works works" "footer footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% 5% auto; } }
 
@@ -85,6 +88,38 @@ ul {
 
 a {
   text-decoration: none !important; }
+
+@keyframes aside__icons {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg);
+    color: #818cab; } }
+
+@keyframes section__icon {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg);
+    color: #818cab; } }
+
+@keyframes display__title {
+  from {
+    margin-bottom: 100%; }
+  to {
+    margin-bottom: 0%; } }
+
+@keyframes more__title {
+  0% {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(2deg); }
+  50% {
+    transform: rotate(-2deg); }
+  75% {
+    transform: rotate(2deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 /* Partials */
 .icon {
@@ -141,7 +176,7 @@ a {
     justify-content: center;
     align-items: center; }
     .header__content__title__box {
-      background-color: rgba(22, 22, 37, 0.8);
+      background-color: var(--transparent);
       border-radius: .5rem;
       padding: 1rem;
       animation: display__title;
@@ -164,7 +199,9 @@ a {
 
 .navbar {
   background-color: var(--nav-color);
-  width: 100%; }
+  width: 100%;
+  position: sticky;
+  top: 0; }
   .navbar__box {
     display: flex;
     justify-content: center;
@@ -188,7 +225,7 @@ a {
     transition: .5s;
     padding: .6rem; }
     .navbar-item:hover {
-      border: 2px solid var(--secondary-color);
+      border: 2px solid #818cab;
       color: var(--nav-font-color); }
 
 .form-switch {
@@ -220,7 +257,7 @@ a {
   align-items: center; }
   .about__title {
     font-size: 6em;
-    font-family: var(--special-font); }
+    font-family: "Sansita Swashed", sans-serif; }
   .about__content {
     font-size: 3em; }
   .about__grid {
@@ -228,8 +265,8 @@ a {
     grid-template-columns: 6fr 6fr;
     align-items: center;
     justify-self: center; }
-    .about__grid__box__content {
-      font-family: var(--primary-font);
+    .about__grid__box-content {
+      font-family: "Shippori Antique B1", sans-serif;
       font-size: 1.4em;
       margin: 4rem; }
     .about__grid__image {
@@ -240,7 +277,7 @@ a {
         border-radius: 1rem; }
   .about__more__title {
     display: inline-block;
-    font-family: var(--primary-font);
+    font-family: "Shippori Antique B1", sans-serif;
     font-size: 2.5em;
     color: var(--nav-font-color);
     background-color: var(--nav-color);
@@ -259,7 +296,6 @@ a {
   grid-template-rows: 1fr; }
 
 .more__item {
-  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -286,9 +322,9 @@ a {
     border-bottom-left-radius: .4rem;
     border-bottom-right-radius: .4rem; }
     .more__item__content-title {
-      font-family: var(--primary-font); }
+      font-family: "Shippori Antique B1", sans-serif; }
     .more__item__content-description {
-      font-family: var(--primary-font);
+      font-family: "Shippori Antique B1", sans-serif;
       font-size: 1.2em; }
 
 @media screen and (max-width: 768px) {

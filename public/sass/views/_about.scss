@@ -9,7 +9,7 @@
     align-items: center;
     &__title {
         font-size: 6em;
-        font-family: var(--special-font);
+        font-family: $special-font;
     }
     &__content {
         font-size: 3em;
@@ -19,8 +19,8 @@
         grid-template-columns: 6fr 6fr;
         align-items: center;
         justify-self: center;
-        &__box__content {
-            font-family: var(--primary-font);
+        &__box-content {
+            font-family: $primary-font;
             font-size: 1.4em;
             margin: 4rem;
         }
@@ -35,7 +35,7 @@
     }
     &__more__title {
         display: inline-block;
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         font-size: 2.5em;
         color: var(--nav-font-color);
         background-color: var(--nav-color);
@@ -58,7 +58,7 @@
 }
 
 .more__item {
-    position: relative;
+
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -88,10 +88,10 @@
         border-bottom-left-radius: .4rem;
         border-bottom-right-radius: .4rem;
         &-title {
-            font-family: var(--primary-font);
+            font-family: $primary-font;
         }
         &-description {
-            font-family: var(--primary-font);
+            font-family: $primary-font;
             font-size: 1.2em;
         }
     }

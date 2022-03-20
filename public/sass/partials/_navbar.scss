@@ -1,6 +1,8 @@
 .navbar {
     background-color: var(--nav-color);
     width: 100%;
+    position: sticky;
+    top: 0;
     &__box {
         display: flex;
         justify-content: center;
@@ -28,7 +30,7 @@
         transition: .5s;
         padding: .6rem;
         &:hover {
-            border: 2px solid var(--secondary-color);
+            border: 2px solid $secondary-color;
             color: var(--nav-font-color);
         }
     }
