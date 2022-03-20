@@ -1,0 +1,21 @@
+.display-row {
+    display: flex;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-box {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}

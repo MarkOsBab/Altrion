@@ -1,0 +1,33 @@
+.aside {
+    background-color: var(--nav-color);
+    position: fixed;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    &__box {
+        margin: 2rem 0;
+    }
+    &__item {
+        margin: 1em 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .aside {
+        position: relative;
+        height: auto;
+        top: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        &__box {
+            display: flex;
+        }
+        &__item {
+            margin: 0 1rem;
+        }
+    }
+}

@@ -1,6 +1,13 @@
 /* Misc */
 @import './misc/variables';
 @import './misc/normalize';
+@import './misc/mixins';
 /* Partials */
+@import './partials/icons';
+@import './partials/aside';
+@import './partials/header';
+@import './partials/navbar';
+@import './partials/footer';
 
 /* Views */
+@import './views/about';

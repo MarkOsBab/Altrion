@@ -15,7 +15,7 @@ const currentTheme = localStorage.getItem('class') ? localStorage.getItem('class
 if (currentTheme) {
     document.body.setAttribute('class', currentTheme);
 
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'theme--dark') {
         toggleSwitch.checked = true;
     }
 }
