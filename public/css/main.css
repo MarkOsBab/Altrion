@@ -1,0 +1,39 @@
+/* Misc */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color) !important;
+  color: var(--font-color) !important; }
+
+[data-theme="dark"] {
+  --primary-color: #161625;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --icon-color: #f2f2f2;
+  --nav-color: #f2f2f2;
+  --nav-font-color: #2b2b2b;
+  --transparent-dark: rgba(22, 22, 37, 0.8); }
+
+[data-theme="light"] {
+  --primary-color: #161625;
+  --secondary-color: #818cab;
+  --light-white: #DCE8F2;
+  --bg-color: #f2f2f2;
+  --font-color: #2b2b2b;
+  --transparent-dark: rgba(22, 22, 37, 0.8);
+  --icon-color: #2b2b2b;
+  --nav-color: #161625;
+  --nav-font-color: #f2f2f2; }
+
+/* Partials */
+/* Views */
