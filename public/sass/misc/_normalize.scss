@@ -12,6 +12,6 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: $bg-color !important;
-    color: $font-color !important;
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
 }

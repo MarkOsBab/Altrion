@@ -2,18 +2,18 @@ const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
+        document.body.setAttribute('class', 'theme--dark');
+        localStorage.setItem('class', 'theme--dark'); //add this
     }
     else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
+        document.body.setAttribute('class', 'theme');
+        localStorage.setItem('class', 'theme'); //add this
     }    
 }
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const currentTheme = localStorage.getItem('class') ? localStorage.getItem('class') : null;
 
 if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
+    document.body.setAttribute('class', currentTheme);
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
