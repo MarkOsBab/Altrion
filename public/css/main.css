@@ -26,7 +26,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  height: 100vh;
+  max-height: 100vh;
   background-color: var(--bg-color) !important;
   color: var(--font-color) !important; }
 
@@ -34,7 +34,7 @@ body {
   display: grid;
   grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside works works works" "aside footer footer footer";
   grid-template-columns: 4em;
-  grid-template-rows: 40% 5rem 1fr 1fr 1fr; }
+  grid-template-rows: 60% 5rem 1fr 1fr 1fr; }
 
 aside {
   grid-area: aside;
@@ -169,7 +169,8 @@ a {
   background-image: url(../images/header.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: bottom; }
   .header__content {
     height: 100%;
     display: flex;
@@ -181,7 +182,9 @@ a {
       padding: 1rem;
       animation: display__title;
       animation-duration: 1s;
-      transition: all ease-in-out; }
+      transition: all ease-in-out;
+      position: sticky;
+      top: 0; }
     .header__content--title {
       font-family: var(--primary-font);
       color: var(--light-white);
@@ -193,9 +196,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .header {
-    background-size: cover; }
-    .header__content__title__box {
-      background-color: rgba(0, 0, 0, 0); } }
+    background-size: cover; } }
 
 .navbar {
   background-color: var(--nav-color);
@@ -248,7 +249,7 @@ a {
 /* Views */
 .about {
   margin: 1rem;
-  padding: 10rem 0;
+  padding-top: 4.4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -349,3 +350,42 @@ a {
     .more__item-image {
       width: 100%;
       min-width: 15rem; } }
+
+.works {
+  margin: 2rem; }
+  .works__title {
+    font-family: "Sansita Swashed", sans-serif;
+    font-size: 3.6em; }
+    .works__title-two {
+      font-family: "Shippori Antique B1", sans-serif;
+      font-size: 1.4em; }
+
+.websites {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-rows: 100%;
+  grid-auto-flow: row; }
+  .websites__item {
+    grid-auto-flow: column;
+    margin: 1rem;
+    justify-self: center;
+    align-self: center; }
+    .websites__item__picture {
+      min-width: 100%;
+      overflow: hidden;
+      margin: 0 auto; }
+      .websites__item__picture-image {
+        width: 100%;
+        transition: transform .5s, filter .5s ease-in-out; }
+        .websites__item__picture-image:hover {
+          transform: scale(1.1); }
+    .websites__item__content {
+      padding: 3rem;
+      background-color: var(--nav-color);
+      padding: 1rem; }
+      .websites__item__content__description {
+        font-family: "Shippori Antique B1", sans-serif;
+        font-size: 1.4em;
+        color: var(--nav-font-color); }
+    .websites__item__flex {
+      margin: 1rem; }

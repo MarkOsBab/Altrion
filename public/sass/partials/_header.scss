@@ -3,6 +3,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: bottom;
     &__content {
         height: 100%;
         display: flex;
@@ -15,6 +16,8 @@
             animation: display__title;
             animation-duration: 1s;
             transition: all ease-in-out;
+            position: sticky;
+            top: 0;
         }
         &--title {
             font-family: var(--primary-font);
@@ -31,8 +34,6 @@
 @media screen and (max-width: 768px) {
     .header {
         background-size: cover;
-        &__content__title__box {
-            background-color: rgba(0, 0, 0, 0);
-        }
+
     }
 }

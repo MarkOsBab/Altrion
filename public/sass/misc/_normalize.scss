@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    max-height: 100vh;
     background-color: var(--bg-color) !important;
     color: var(--font-color) !important;
 }
@@ -26,7 +26,7 @@ body {
     "aside works works works"
     "aside footer footer footer";
     grid-template-columns: 4em;
-    grid-template-rows: 40% 5rem 1fr 1fr 1fr;
+    grid-template-rows: 60% 5rem 1fr 1fr 1fr;
     
 }
 
