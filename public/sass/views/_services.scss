@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin: 0 2rem;
+    padding: 3rem 0;
     &__title {
         font-size: 3.6em;
-        font-family: $special-font;
+        font-family: $primary-font;
+        font-weight: 100;
         &--sub {
             font-size: 2em;
         }
@@ -18,9 +20,11 @@
         background-clip: border-box;
         background-color: var(--nav-color);
         margin: 1rem;
-        &__btn {
-            border: none;
-            cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &:hover .services__item__content {
+            visibility: visible;
+            opacity: 1;
         }
         &__image__box {
             min-width: 100%;
@@ -29,6 +33,7 @@
         }
         &-image {
             width: 100%;
+            height: 100%;
             transition: transform .5s, filter .5s ease-in-out;
             filter: grayscale(100%);
             &:hover {
@@ -37,18 +42,36 @@
             }
         }
         &__content {
+            // Propiedad para superponer el div a la imágen
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+            // Animación para suavizar la vista
+            transition: all .5s;
+            // Propiedades del div
             padding: 3rem;
             background-color: var(--nav-color);
             color: var(--nav-font-color);
+            height: 40%;
+            width: 100%;
+            // Alinear elementos
+            display: flex;
             align-items: center;
-            border-bottom-left-radius: .4rem;
-            border-bottom-right-radius: .4rem;
+            justify-items: center;
+            &__space {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
             &-title {
+                display: inline-block;
+                font-size: 1.5em;
                 font-family: $primary-font;
             }
             &-description {
                 font-family: $primary-font;
-                font-size: 1.2em;
+                font-size: 1.3em;
             }
         }
     }

@@ -402,10 +402,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; }
+  margin: 0 2rem;
+  padding: 3rem 0; }
   .services__title {
     font-size: 3.6em;
-    font-family: "Sansita Swashed", sans-serif; }
+    font-family: "Shippori Antique B1", sans-serif;
+    font-weight: 100; }
     .services__title--sub {
       font-size: 2em; }
   .services__item {
@@ -415,33 +417,49 @@ a {
     word-wrap: break-word;
     background-clip: border-box;
     background-color: var(--nav-color);
-    margin: 1rem; }
-    .services__item__btn {
-      border: none;
-      cursor: pointer; }
+    margin: 1rem;
+    position: relative;
+    overflow: hidden; }
+    .services__item:hover .services__item__content {
+      visibility: visible;
+      opacity: 1; }
     .services__item__image__box {
       min-width: 100%;
       overflow: hidden;
       margin: 0 auto; }
     .services__item-image {
       width: 100%;
+      height: 100%;
       transition: transform .5s, filter .5s ease-in-out;
       filter: grayscale(100%); }
       .services__item-image:hover {
         filter: grayscale(0);
         transform: scale(1.1); }
     .services__item__content {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      transition: all .5s;
       padding: 3rem;
       background-color: var(--nav-color);
       color: var(--nav-font-color);
+      height: 40%;
+      width: 100%;
+      display: flex;
       align-items: center;
-      border-bottom-left-radius: .4rem;
-      border-bottom-right-radius: .4rem; }
+      justify-items: center; }
+      .services__item__content__space {
+        display: grid;
+        grid-template-columns: 1fr; }
       .services__item__content-title {
+        display: inline-block;
+        font-size: 1.5em;
         font-family: "Shippori Antique B1", sans-serif; }
       .services__item__content-description {
         font-family: "Shippori Antique B1", sans-serif;
-        font-size: 1.2em; }
+        font-size: 1.3em; }
 
 @media screen and (max-width: 768px) {
   .serviecs__item {
