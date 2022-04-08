@@ -9,6 +9,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &__keys {
+            color: $secondary-color;
+            &::before {
+                content: '{';
+            }
+            &::after {
+                content: '}';
+            }
+        }
         &__title__box {
             background-color: var(--transparent);
             border-radius: .5rem;
@@ -16,7 +25,6 @@
             animation: display__title;
             animation-duration: 1s;
             transition: all ease-in-out;
-            position: sticky;
             top: 0;
         }
         &--title {

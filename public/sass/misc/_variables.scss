@@ -5,6 +5,7 @@
     --nav-color: #161625;
     --nav-font-color: #f2f2f2;
     --transparent: rgba(255, 255, 255, 0.8);
+    transition: all .5s;
     &--dark {
         --font-color: #e1e1ff;
         --bg-color: #161625;
@@ -12,6 +13,7 @@
         --nav-color: #f2f2f2;
         --nav-font-color: #2b2b2b;
         --transparent: rgba(22, 22, 37, 0.8);
+        transition: all .5s;
     }
 }
 $primary-font: 'Shippori Antique B1', sans-serif;

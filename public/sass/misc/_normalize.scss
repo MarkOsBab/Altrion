@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
     "header header header header"
     "aside navbar navbar navbar"
     "aside about about about"
+    "aside services services services"
     "aside works works works"
     "aside footer footer footer";
     grid-template-columns: 4em;
@@ -45,6 +47,10 @@ nav {
 
 #about {
     grid-area: about;
+}
+
+#services {
+    grid-area: services;
 }
 
 #works {
@@ -77,6 +83,7 @@ footer {
         "header header header header"
         "navbar navbar navbar navbar"
         "about about about about"
+        "services services services services"
         "works works works works"
         "footer footer footer footer";
         grid-template-columns: 1fr;

@@ -6,14 +6,16 @@
   --icon-color: #2b2b2b;
   --nav-color: #161625;
   --nav-font-color: #f2f2f2;
-  --transparent: rgba(255, 255, 255, 0.8); }
+  --transparent: rgba(255, 255, 255, 0.8);
+  transition: all .5s; }
   .theme--dark {
     --font-color: #e1e1ff;
     --bg-color: #161625;
     --icon-color: #f2f2f2;
     --nav-color: #f2f2f2;
     --nav-font-color: #2b2b2b;
-    --transparent: rgba(22, 22, 37, 0.8); }
+    --transparent: rgba(22, 22, 37, 0.8);
+    transition: all .5s; }
 
 *,
 *::after,
@@ -23,7 +25,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   max-height: 100vh;
@@ -32,7 +35,7 @@ body {
 
 #home {
   display: grid;
-  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside works works works" "aside footer footer footer";
+  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside services services services" "aside works works works" "aside footer footer footer";
   grid-template-columns: 4em;
   grid-template-rows: 60% 5rem 1fr 1fr 1fr; }
 
@@ -48,6 +51,9 @@ nav {
 
 #about {
   grid-area: about; }
+
+#services {
+  grid-area: services; }
 
 #works {
   grid-area: works; }
@@ -68,7 +74,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #home {
-    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "works works works works" "footer footer footer footer";
+    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "services services services services" "works works works works" "footer footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% 5% auto; } }
 
@@ -88,6 +94,29 @@ ul {
 
 a {
   text-decoration: none !important; }
+
+.titles {
+  transform: translateX(-0.75em);
+  transition: transform 200ms; }
+  .titles::before {
+    content: '#';
+    display: inline-block;
+    width: 0.75em;
+    color: #818cab;
+    opacity: 0;
+    transition: opacity 200ms; }
+  .titles:hover {
+    transform: none; }
+  .titles:hover::before {
+    opacity: 1; }
+
+@media screen and (max-width: 768px) {
+  .titles {
+    transform: none;
+    transition: none; }
+    .titles::before {
+      content: none;
+      width: 0em; } }
 
 @keyframes aside__icons {
   from {
@@ -149,6 +178,51 @@ a {
     margin: 2rem 0; }
   .aside__item {
     margin: 1em 0; }
+    .aside__item__switch {
+      display: flex;
+      align-items: center; }
+      .aside__item__switch__label {
+        display: inline-block;
+        position: relative;
+        width: 3rem;
+        height: 1.7rem; }
+      .aside__item__switch__input {
+        display: none; }
+        .aside__item__switch__input:checked + .aside__item__switch--slider {
+          background-color: var(--bg-color); }
+        .aside__item__switch__input:checked + .aside__item__switch--slider:before {
+          transform: translateX(4px); }
+      .aside__item__switch--slider {
+        background-color: var(--bg-color);
+        width: 3.5rem;
+        height: 1.5rem;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: .5s; }
+        .aside__item__switch--slider:before {
+          background-color: var(--nav-color);
+          bottom: .4rem;
+          content: '';
+          left: .4rem;
+          position: absolute;
+          transition: .5s;
+          width: .7rem;
+          height: .7rem; }
+      .aside__item__switch--round {
+        border-radius: 1.3rem; }
+        .aside__item__switch--round::before {
+          border-radius: 1.3rem; }
+      .aside__item__switch--icon {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        font-size: 1.3rem;
+        padding-right: .3rem; }
 
 @media screen and (max-width: 768px) {
   .aside {
@@ -176,6 +250,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .header__content__keys {
+      color: #818cab; }
+      .header__content__keys::before {
+        content: '{'; }
+      .header__content__keys::after {
+        content: '}'; }
     .header__content__title__box {
       background-color: var(--transparent);
       border-radius: .5rem;
@@ -183,7 +263,6 @@ a {
       animation: display__title;
       animation-duration: 1s;
       transition: all ease-in-out;
-      position: sticky;
       top: 0; }
     .header__content--title {
       font-family: var(--primary-font);
@@ -202,11 +281,13 @@ a {
   background-color: var(--nav-color);
   width: 100%;
   position: sticky;
-  top: 0; }
+  top: 0;
+  overflow: hidden; }
   .navbar__box {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
     .navbar__box__item {
       align-self: center; }
   .navbar-list {
@@ -220,7 +301,7 @@ a {
     color: var(--nav-font-color);
     font-family: var(--primary-font);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.6em;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: .2rem;
     transition: .5s;
@@ -265,16 +346,18 @@ a {
     display: grid;
     grid-template-columns: 6fr 6fr;
     align-items: center;
-    justify-self: center; }
+    justify-self: center;
+    padding: 1rem 0; }
     .about__grid__box-content {
       font-family: "Shippori Antique B1", sans-serif;
       font-size: 1.4em;
       margin: 4rem; }
     .about__grid__image {
-      min-width: 10em; }
+      min-width: 5em; }
       .about__grid__image-image {
         width: 100%;
-        max-width: 45em;
+        max-width: 100%;
+        height: auto;
         border-radius: 1rem; }
   .about__more__title {
     display: inline-block;
@@ -296,38 +379,6 @@ a {
   grid-template-columns: 4fr 4fr 4fr;
   grid-template-rows: 1fr; }
 
-.more__item {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  background-color: var(--nav-color);
-  margin: 1rem; }
-  .more__item__image__box {
-    min-width: 100%;
-    overflow: hidden;
-    margin: 0 auto; }
-  .more__item-image {
-    width: 100%;
-    transition: transform .5s, filter .5s ease-in-out;
-    filter: grayscale(100%); }
-    .more__item-image:hover {
-      filter: grayscale(0);
-      transform: scale(1.1); }
-  .more__item__content {
-    padding: 3rem;
-    background-color: var(--nav-color);
-    color: var(--nav-font-color);
-    align-items: center;
-    border-bottom-left-radius: .4rem;
-    border-bottom-right-radius: .4rem; }
-    .more__item__content-title {
-      font-family: "Shippori Antique B1", sans-serif; }
-    .more__item__content-description {
-      font-family: "Shippori Antique B1", sans-serif;
-      font-size: 1.2em; }
-
 @media screen and (max-width: 768px) {
   .about {
     padding: 0; }
@@ -342,12 +393,60 @@ a {
       grid-template-columns: 12fr;
       grid-template-rows: 12fr; }
       .about__grid__box__image-image {
-        margin: 0; }
+        margin: 0;
+        width: 100%; }
   .item {
-    grid-template-columns: 12fr; }
-  .more__item {
+    grid-template-columns: 12fr; } }
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  .services__title {
+    font-size: 3.6em;
+    font-family: "Sansita Swashed", sans-serif; }
+    .services__title--sub {
+      font-size: 2em; }
+  .services__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: var(--nav-color);
+    margin: 1rem; }
+    .services__item__btn {
+      border: none;
+      cursor: pointer; }
+    .services__item__image__box {
+      min-width: 100%;
+      overflow: hidden;
+      margin: 0 auto; }
+    .services__item-image {
+      width: 100%;
+      transition: transform .5s, filter .5s ease-in-out;
+      filter: grayscale(100%); }
+      .services__item-image:hover {
+        filter: grayscale(0);
+        transform: scale(1.1); }
+    .services__item__content {
+      padding: 3rem;
+      background-color: var(--nav-color);
+      color: var(--nav-font-color);
+      align-items: center;
+      border-bottom-left-radius: .4rem;
+      border-bottom-right-radius: .4rem; }
+      .services__item__content-title {
+        font-family: "Shippori Antique B1", sans-serif; }
+      .services__item__content-description {
+        font-family: "Shippori Antique B1", sans-serif;
+        font-size: 1.2em; }
+
+@media screen and (max-width: 768px) {
+  .serviecs__item {
     margin: 1rem 0; }
-    .more__item-image {
+    .serviecs__item-image {
       width: 100%;
       min-width: 15rem; } }
 
