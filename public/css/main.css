@@ -413,6 +413,7 @@ a {
   .services__item {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
@@ -461,12 +462,19 @@ a {
         font-family: "Shippori Antique B1", sans-serif;
         font-size: 1.3em; }
 
+@media screen and (max-width: 1055px) {
+  .services__item__content {
+    height: 100%; } }
+
 @media screen and (max-width: 768px) {
   .serviecs__item {
     margin: 1rem 0; }
     .serviecs__item-image {
       width: 100%;
-      min-width: 15rem; } }
+      min-width: 15rem; }
+  .display-row {
+    flex-direction: column;
+    flex-wrap: wrap; } }
 
 .works {
   margin: 2rem; }
