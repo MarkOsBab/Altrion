@@ -472,6 +472,7 @@ a {
         height: 100%;
         margin: 1rem 0; }
         .services__item__picture--image {
+          min-width: 240px;
           filter: grayscale(0%); }
       .services__item__content {
         visibility: hidden;
