@@ -4,8 +4,16 @@
     align-items: center;
     margin: 0 2rem;
     padding: 3rem 0;
+    &__box {
+        margin: 3rem 0;
+        padding: 2rem;
+        background-color: var(--nav-color);
+        color: var(--nav-font-color);
+        border-radius: 2rem 3rem 0 0;
+        text-align: center;
+    }
     &__title {
-        font-size: 3.6em;
+        font-size: 3em;
         font-family: $primary-font;
         font-weight: 100;
         &--sub {
