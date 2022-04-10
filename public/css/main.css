@@ -399,24 +399,21 @@ a {
     grid-template-columns: 12fr; } }
 
 .services {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 2rem;
   padding: 3rem 0; }
   .services__box {
-    margin: 3rem 0;
-    padding: 2rem;
     background-color: var(--nav-color);
     color: var(--nav-font-color);
-    border-radius: 2rem 3rem 0 0;
-    text-align: center; }
+    width: 70%;
+    margin: 3rem 0; }
   .services__title {
-    font-size: 3em;
+    font-size: 6em;
     font-family: "Shippori Antique B1", sans-serif;
-    font-weight: 100; }
-    .services__title--sub {
-      font-size: 2em; }
+    padding: 3rem 0;
+    margin: 0 5rem; }
+    .services__title__block {
+      display: block; }
   .services__item {
     display: grid;
     grid-template-columns: 6fr 6fr; }
@@ -456,6 +453,8 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+    .services__box {
+      width: 100%; }
     .services__grid {
       display: flex;
       flex-direction: column;
