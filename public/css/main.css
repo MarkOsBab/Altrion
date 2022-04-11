@@ -396,7 +396,7 @@ a {
       .about__grid__box-content {
         color: var(--font-color); }
       .about__grid__box__image-image {
-        margin: 0;
+        margin: 1rem 0;
         width: 100%; } }
 
 .services {
