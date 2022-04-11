@@ -25,7 +25,6 @@ body {
     "aside navbar navbar navbar"
     "aside about about about"
     "aside services services services"
-    "aside works works works"
     "aside footer footer footer";
     grid-template-columns: 4em;
     grid-template-rows: 60% 5rem 1fr 1fr 1fr;
@@ -51,10 +50,6 @@ nav {
 
 #services {
     grid-area: services;
-}
-
-#works {
-    grid-area: works;
 }
 
 footer {
@@ -84,7 +79,6 @@ footer {
         "navbar navbar navbar navbar"
         "about about about about"
         "services services services services"
-        "works works works works"
         "footer footer footer footer";
         grid-template-columns: 1fr;
         grid-template-rows: 5% 20% 5% auto;
