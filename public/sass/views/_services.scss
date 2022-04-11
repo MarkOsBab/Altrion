@@ -3,8 +3,8 @@
     align-items: center;
     padding: 3rem 0;
     &__box {
-        background-color: var(--nav-color);
-        color: var(--nav-font-color);
+        background-color: var(--opposite-color);
+        color: var(--opposite-font-color);
         width: 70%;
         margin: 3rem 0;
     }
@@ -36,8 +36,8 @@
             }
         }
         &__content {
-            background-color: var(--nav-color);
-            color: var(--nav-font-color);
+            background-color: var(--opposite-color);
+            color: var(--opposite-font-color);
             display: flex;
             justify-content: center;
             align-items: center;

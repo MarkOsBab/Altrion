@@ -1,5 +1,5 @@
 .aside {
-    background-color: var(--nav-color);
+    background-color: var(--opposite-color);
     position: fixed;
     height: 100vh;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
                 right: 0;
                 transition: .5s;
                 &:before {
-                    background-color: var(--nav-color);
+                    background-color: var(--opposite-color);
                     bottom: .4rem;
                     content: '';
                     left: .4rem;
