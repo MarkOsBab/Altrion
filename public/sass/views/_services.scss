@@ -73,37 +73,27 @@
             flex-wrap: wrap;
         }
         &__item {
-            display: flex;
-            position: relative;
-            overflow: hidden;
-            &:hover &__content {
-                visibility: visible;
-                opacity: 1;
-            }
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
             &__picture {
                 width: 100%;
                 height: 100%;
-                margin: 1rem 0;
                 &--image {
                     min-width: 240px;
                     filter: grayscale(0%);
+                    height: 50vh;
+                    &:hover {
+                        transform: scale(1);
+                    }
                 }
             }
             &__content {
-                visibility: hidden;
-                opacity: 0;
-                position: absolute;
-                bottom: 0;
-                z-index: 10;
-                transition: all .5s;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                &--description {
-                    display: grid;
-                    grid-template-columns: 1fr;
+                height: 50vh;
+                background-color: var(--bg-color);
+                color: var(--font-color);
+                &:nth-child(1) {
+                    order: 2;
                 }
             }
         }
