@@ -344,7 +344,6 @@ a {
   background-repeat: no-repeat;
   background-position: bottom; }
   .about__box {
-    width: 100vw;
     height: 100%;
     display: grid;
     grid-template-rows: 20% 15% 70%;
@@ -369,7 +368,8 @@ a {
     .about__grid__box-content {
       font-family: "Shippori Antique B1", sans-serif;
       font-size: 1.4em;
-      color: var(--opposite-font-color); }
+      color: var(--opposite-font-color);
+      margin: 0 3rem; }
     .about__grid__image {
       min-width: 5em; }
       .about__grid__image-image {
@@ -377,29 +377,12 @@ a {
         max-width: 100%;
         height: auto;
         border-radius: 1rem; }
-  .about__more__title {
-    display: inline-block;
-    font-family: "Shippori Antique B1", sans-serif;
-    font-size: 2.5em;
-    color: var(--opposite-font-color);
-    background-color: var(--opposite-color);
-    border-radius: .5rem;
-    padding: 1.3rem;
-    transition: all step-end;
-    margin: 1rem; }
-    .about__more__title:hover {
-      color: var(--opposite-font-color);
-      animation-name: more__title;
-      animation-duration: 2s; }
-
-.item {
-  display: grid;
-  grid-template-columns: 4fr 4fr 4fr;
-  grid-template-rows: 1fr; }
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 0; }
+    background: var(--bg-color);
+    padding: 0;
+    height: 70vh; }
     .aboutul {
       padding: 0.1em; }
     .about__grid {
@@ -410,11 +393,11 @@ a {
       align-items: center;
       grid-template-columns: 12fr;
       grid-template-rows: 12fr; }
+      .about__grid__box-content {
+        color: var(--font-color); }
       .about__grid__box__image-image {
         margin: 0;
-        width: 100%; }
-  .item {
-    grid-template-columns: 12fr; } }
+        width: 100%; } }
 
 .services {
   justify-content: center;
@@ -426,7 +409,7 @@ a {
     width: 70%;
     margin: 3rem 0; }
   .services__title {
-    font-size: 6em;
+    font-size: 5em;
     font-family: "Shippori Antique B1", sans-serif;
     padding: 3rem 0;
     margin: 0 5rem; }

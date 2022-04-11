@@ -14,7 +14,6 @@
     background-position: bottom;
 
     &__box{
-        width: 100vw;
         height: 100%;
         display: grid;
         grid-template-rows: 20% 15% 70%;
@@ -45,7 +44,7 @@
             font-family: $primary-font;
             font-size: 1.4em;        
             color:var(--opposite-font-color);
-            
+            margin: 0 3rem;
         }
         &__image {
             min-width: 5em;
@@ -57,33 +56,13 @@
             }
         }
     }
-    &__more__title {
-        display: inline-block;
-        font-family: $primary-font;
-        font-size: 2.5em;
-        color: var(--opposite-font-color);
-        background-color: var(--opposite-color);
-        border-radius: .5rem;
-        padding: 1.3rem;
-        transition: all step-end;
-        margin: 1rem;
-        &:hover {
-            color: var(--opposite-font-color);
-            animation-name: more__title;
-            animation-duration: 2s;
-        }
-    }
-}
-
-.item {
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: 1fr;
 }
 
 @media screen and (max-width: 768px) {
     .about {
+        background: var(--bg-color);
         padding: 0;
+        height: 70vh;
         &ul {
             padding: 0.1em;
         }
@@ -95,13 +74,14 @@
             align-items: center;
             grid-template-columns: 12fr;
             grid-template-rows: 12fr;
+            &__box-content {
+                color: var(--font-color);
+            }
             &__box__image-image {
                 margin: 0;
                 width: 100%;
             }
         }
     }
-    .item {
-        grid-template-columns: 12fr;
-    }
+    
 }
