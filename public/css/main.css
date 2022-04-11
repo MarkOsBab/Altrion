@@ -3,17 +3,20 @@
 .theme {
   --bg-color: #f2f2f2;
   --font-color: #2b2b2b;
+  --opposite-font-color:#e1e1ff;
   --icon-color: #2b2b2b;
   --nav-color: #161625;
-  --nav-font-color: #f2f2f2;
+  --opposite-font-color: #f2f2f2;
   --transparent: rgba(255, 255, 255, 0.8);
   transition: all .5s; }
   .theme--dark {
+    --svg-about:url(../images/about/waveDark.svg);
     --font-color: #e1e1ff;
+    --opposite-font-color:#2b2b2b;
     --bg-color: #161625;
-    --icon-color: #f2f2f2;
+    --icon-color: # ;
     --nav-color: #f2f2f2;
-    --nav-font-color: #2b2b2b;
+    --opposite-font-color: #2b2b2b;
     --transparent: rgba(22, 22, 37, 0.8);
     transition: all .5s; }
 
@@ -152,7 +155,7 @@ a {
 
 /* Partials */
 .icon {
-  color: var(--nav-font-color);
+  color: var(--opposite-font-color);
   transition: all step-end; }
   .icon:hover {
     animation-name: aside__icons;
@@ -298,7 +301,7 @@ a {
     .navbar-list__item {
       margin: 0 1rem; }
   .navbar-item {
-    color: var(--nav-font-color);
+    color: var(--opposite-font-color);
     font-family: var(--primary-font);
     font-weight: bold;
     font-size: 1.6em;
@@ -308,7 +311,7 @@ a {
     padding: .6rem; }
     .navbar-item:hover {
       border: 2px solid #818cab;
-      color: var(--nav-font-color); }
+      color: var(--opposite-font-color); }
 
 .form-switch {
   display: flex;
@@ -324,24 +327,40 @@ a {
 
 .footer {
   background-color: var(--nav-color);
-  color: var(--nav-font-color);
+  color: var(--opposite-font-color);
   padding: 1rem 0; }
 
 /* Views */
 .about {
-  margin: 1rem;
   padding-top: 4.4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 100vh;
+  background: var(--svg-about);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .about__box {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 15% 70%;
+    align-items: center; }
   .about__title {
+    text-align: center;
     font-size: 6em;
     font-family: "Sansita Swashed", sans-serif; }
   .about__content {
-    font-size: 3em; }
+    text-align: center;
+    font-size: 3em;
+    color: var(--font-color);
+    font-weight: 300; }
+    .about__content span {
+      font-size: 4rem; }
   .about__grid {
     display: grid;
     grid-template-columns: 6fr 6fr;
@@ -351,7 +370,7 @@ a {
     .about__grid__box-content {
       font-family: "Shippori Antique B1", sans-serif;
       font-size: 1.4em;
-      margin: 4rem; }
+      color: var(--opposite-font-color); }
     .about__grid__image {
       min-width: 5em; }
       .about__grid__image-image {
@@ -363,14 +382,14 @@ a {
     display: inline-block;
     font-family: "Shippori Antique B1", sans-serif;
     font-size: 2.5em;
-    color: var(--nav-font-color);
+    color: var(--opposite-font-color);
     background-color: var(--nav-color);
     border-radius: .5rem;
     padding: 1.3rem;
     transition: all step-end;
     margin: 1rem; }
     .about__more__title:hover {
-      color: var(--nav-font-color);
+      color: var(--opposite-font-color);
       animation-name: more__title;
       animation-duration: 2s; }
 
@@ -514,6 +533,6 @@ a {
       .websites__item__content__description {
         font-family: "Shippori Antique B1", sans-serif;
         font-size: 1.4em;
-        color: var(--nav-font-color); }
+        color: var(--opposite-font-color); }
     .websites__item__flex {
       margin: 1rem; }
