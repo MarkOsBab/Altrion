@@ -327,7 +327,39 @@ a {
 .footer {
   background-color: var(--opposite-color);
   color: var(--opposite-font-color);
-  padding: 1rem 0; }
+  height: 50vh;
+  font-family: "Shippori Antique B1", sans-serif; }
+  .footer__wrapper {
+    display: flex;
+    height: 44vh;
+    justify-content: space-around;
+    align-items: center; }
+    .footer__wrapper__item {
+      width: 25%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .footer__wrapper__item h1 {
+        font-size: 2rem; }
+    .footer__wrapper__item__logo {
+      background-color: yellow;
+      width: 70%;
+      height: 70%; }
+    .footer__wrapper__list {
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .footer__wrapper__list__item {
+        font-size: 1.4rem;
+        color: var(--opposite-font-color); }
+  .footer__closing {
+    width: 100%;
+    text-align: center;
+    height: 6vh;
+    float: inline-end;
+    font-size: 1.2rem; }
 
 /* Views */
 .about {
