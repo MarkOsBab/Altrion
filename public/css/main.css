@@ -327,11 +327,9 @@ a {
 .footer {
   background-color: var(--opposite-color);
   color: var(--opposite-font-color);
-  height: 50vh;
   font-family: "Shippori Antique B1", sans-serif; }
   .footer__wrapper {
     display: flex;
-    height: 44vh;
     justify-content: space-around;
     align-items: center; }
     .footer__wrapper__item {
@@ -341,6 +339,7 @@ a {
       flex-direction: column;
       justify-content: space-between; }
       .footer__wrapper__item__logo {
+        text-align: center;
         min-width: 5em; }
         .footer__wrapper__item__logo--image {
           width: 100%;

@@ -1,11 +1,9 @@
 .footer {
   background-color: var(--opposite-color);
   color: var(--opposite-font-color);
-  height: 50vh;
   font-family: $primary-font;
   &__wrapper {
     display: flex;
-    height: 44vh;
     justify-content: space-around;
     align-items: center;
     
