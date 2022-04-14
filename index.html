@@ -285,17 +285,37 @@
 
     <!-- Our section -->
     <section class="works" id="works">
+      <div class="works__box">
+        <h2 class="works__title">Nuestros trabajos realizados</h2>
+      </div>
       <div class="container-box">
-        <h2 class="works__title">Nuestros trabajos</h2>
-        <p class="works__title-two">
-          Trabajamos en sitios de prueba para mostrar nuestros diseños
-        </p>
+        <div class="works__wrapper">
+          <div class="works__wrapper__items">
+
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Our section -->
 
     <!-- Contact section -->
-
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contáctanos</h2>
+      <div class="contact__wrapper">
+        <form method="post">
+          <div class="contact__wrapper__item">
+            <input class="contact__wrapper__item__form" type="text" placeholder="E-mail">
+            <input class="contact__wrapper__item__form" type="text" placeholder="Nombre">
+          </div>
+          <div class="contact__wrapper__item">
+            <input class="contact__wrapper__item__form" type="text" placeholder="Razón de contacto">
+          </div>
+          <div class="contact__wrapper__item">
+            <textarea class="contact__wrapper__item__form" name="message" placeholder="Mensaje..."></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- End contact section -->
 
     <!-- End sections -->
@@ -340,7 +360,7 @@
           </div>
           <div class="footer__wrapper__item">
             <div class="footer__wrapper__item__logo">
-              <img class="footer__wrapper__item__logo--image" src="./public/images/footer/Logo_Light.png" alt="Altrion-logo">
+              <img class="footer__wrapper__item__logo--image" id="switch-image" src="./public/images/footer/Logo_Dark.png" alt="Altrion-logo">
               <h2>Made with &#128150; by Altrion</h2>
             </div>
           </div>

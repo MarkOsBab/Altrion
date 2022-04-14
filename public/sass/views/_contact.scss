@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 20rem;
+    &__title {
+        font-family: $primary-font;
+        font-size: 4em;
+        margin-left: 7rem;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--opposite-color);
+        color: var(--opposite-font-color);
+        padding: 3rem;
+        width: 50%;
+        height: 50%;
+        &__item {
+            display: flex;
+            margin: 1rem;
+            &__form {
+                padding: 1rem;
+                margin: 0 2rem;
+                width: 100%;
+                resize: none;
+                border: none;
+                border-bottom: .2rem solid $secondary-color;
+                background-color: transparent;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

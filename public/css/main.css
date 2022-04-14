@@ -37,7 +37,7 @@ body {
 
 #home {
   display: grid;
-  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside services services services" "aside works works works" "aside footer footer footer";
+  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside services services services" "aside works works works" "aside contact contact contact" "aside footer footer footer";
   grid-template-columns: 4em;
   grid-template-rows: 60% 5rem 1fr 1fr 1fr; }
 
@@ -60,6 +60,9 @@ nav {
 #works {
   grid-area: works; }
 
+#contact {
+  grid-area: contact; }
+
 footer {
   grid-area: footer; }
 
@@ -76,7 +79,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #home {
-    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "services services services services" "works works works works" "footer footer footer footer";
+    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "services services services services" "works works works works" "contact contact contact contact" "footer footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% 5% auto; } }
 
@@ -367,16 +370,9 @@ a {
   .footer {
     height: 100%; }
     .footer__wrapper {
-      height: 100%; }
-      .footer__wrapper:nth-child(1) {
-        flex-direction: row;
-        flex-wrap: wrap; }
-      .footer__wrapper:nth-child(2) {
-        flex-direction: row;
-        flex-wrap: wrap; }
-      .footer__wrapper:nth-child(3) {
-        flex-direction: column;
-        flex-wrap: nowrap; }
+      height: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap; }
       .footer__wrapper__item {
         padding: 1rem 0;
         width: auto;
@@ -467,7 +463,8 @@ a {
     font-size: 5em;
     font-family: "Shippori Antique B1", sans-serif;
     padding: 3rem 0;
-    margin: 0 5rem; }
+    margin: 0 5rem;
+    margin-bottom: 6.5rem; }
     .services__title__block {
       display: block; }
   .services__item {
@@ -534,3 +531,56 @@ a {
         color: var(--font-color); }
         .services__item__content:nth-child(1) {
           order: 2; } }
+
+.works {
+  margin: 3rem 0; }
+  .works__box {
+    background-color: var(--opposite-color);
+    color: var(--opposite-font-color);
+    width: 70%;
+    margin-left: auto; }
+  .works__title {
+    font-family: "Shippori Antique B1", sans-serif;
+    color: var(--opposite-font-color);
+    font-size: 5em;
+    padding: 3rem 0;
+    margin: 0 2rem;
+    text-align: right; }
+  .works__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 20rem; }
+  .contact__title {
+    font-family: "Shippori Antique B1", sans-serif;
+    font-size: 4em;
+    margin-left: 7rem; }
+  .contact__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--opposite-color);
+    color: var(--opposite-font-color);
+    padding: 3rem;
+    width: 50%;
+    height: 50%; }
+    .contact__wrapper__item {
+      display: flex;
+      margin: 1rem; }
+      .contact__wrapper__item__form {
+        padding: 1rem;
+        margin: 0 2rem;
+        width: 100%;
+        resize: none;
+        border: none;
+        border-bottom: 0.2rem solid #818cab;
+        background-color: transparent; }
+        .contact__wrapper__item__form:focus {
+          outline: none; }

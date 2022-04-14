@@ -52,18 +52,8 @@
     height: 100%;
     &__wrapper {
       height: 100%;
-      &:nth-child(1) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      &:nth-child(2) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      &:nth-child(3){
         flex-direction: column;
         flex-wrap: nowrap;
-      }
       &__item {
         padding: 1rem 0;
         width: auto;
