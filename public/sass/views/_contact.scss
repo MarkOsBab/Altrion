@@ -6,9 +6,12 @@
     height: 100vh;
     gap: 20rem;
     &__title {
-        font-family: $primary-font;
-        font-size: 4em;
+        font-family: $special-font;
+        font-size: 3em;
         margin-left: 7rem;
+        .fa-id-card {
+            margin-right: 1rem;
+        }
     }
     &__wrapper {
         display: flex;
@@ -22,6 +25,11 @@
         &__item {
             display: flex;
             margin: 1rem;
+            &--center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             &__form {
                 padding: 1rem;
                 margin: 0 2rem;
@@ -30,9 +38,63 @@
                 border: none;
                 border-bottom: .2rem solid $secondary-color;
                 background-color: transparent;
+                color: var(--opposite-font-color);
+                font-family: $primary-font;
                 &:focus {
                     outline: none;
                 }
+                &--btn{
+                    font-family: $primary-font;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    border: none;
+                    padding: 1.6rem;
+                    margin: 1rem 0;
+                    cursor: pointer;
+                    background-color: var(--bg-color);
+                    color: var(--font-color);
+                    border-radius: 3rem;
+                    transition: all .5s;
+                    &:hover {
+                        opacity: .9;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1160px) {
+    .contact {
+        gap: 10rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .contact {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .contact {
+        display: block;
+        height: auto;
+        &__title {
+            padding: 2rem 0;
+            background-color: var(--opposite-color);
+            color: var(--opposite-font-color);
+            margin: 0;
+            text-align: center;
+        }
+        &__wrapper {
+            width: 100%;
+            height: auto;
+            &__item {
+                width: 100%;
+                flex-direction: column;
+                margin: 1rem 0;
+                flex-flow: wrap;
             }
         }
     }

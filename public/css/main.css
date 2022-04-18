@@ -559,9 +559,11 @@ a {
   height: 100vh;
   gap: 20rem; }
   .contact__title {
-    font-family: "Shippori Antique B1", sans-serif;
-    font-size: 4em;
+    font-family: "Sansita Swashed", sans-serif;
+    font-size: 3em;
     margin-left: 7rem; }
+    .contact__title .fa-id-card {
+      margin-right: 1rem; }
   .contact__wrapper {
     display: flex;
     justify-content: center;
@@ -574,6 +576,10 @@ a {
     .contact__wrapper__item {
       display: flex;
       margin: 1rem; }
+      .contact__wrapper__item--center {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       .contact__wrapper__item__form {
         padding: 1rem;
         margin: 0 2rem;
@@ -581,6 +587,50 @@ a {
         resize: none;
         border: none;
         border-bottom: 0.2rem solid #818cab;
-        background-color: transparent; }
+        background-color: transparent;
+        color: var(--opposite-font-color);
+        font-family: "Shippori Antique B1", sans-serif; }
         .contact__wrapper__item__form:focus {
           outline: none; }
+        .contact__wrapper__item__form--btn {
+          font-family: "Shippori Antique B1", sans-serif;
+          font-size: 1.4em;
+          font-weight: bold;
+          border: none;
+          padding: 1.6rem;
+          margin: 1rem 0;
+          cursor: pointer;
+          background-color: var(--bg-color);
+          color: var(--font-color);
+          border-radius: 3rem;
+          transition: all .5s; }
+          .contact__wrapper__item__form--btn:hover {
+            opacity: .9;
+            transform: scale(1.1); }
+
+@media screen and (max-width: 1160px) {
+  .contact {
+    gap: 10rem; } }
+
+@media screen and (max-width: 960px) {
+  .contact {
+    gap: 1rem; } }
+
+@media screen and (max-width: 780px) {
+  .contact {
+    display: block;
+    height: auto; }
+    .contact__title {
+      padding: 2rem 0;
+      background-color: var(--opposite-color);
+      color: var(--opposite-font-color);
+      margin: 0;
+      text-align: center; }
+    .contact__wrapper {
+      width: 100%;
+      height: auto; }
+      .contact__wrapper__item {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0;
+        flex-flow: wrap; } }
