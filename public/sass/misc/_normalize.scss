@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sansita+Swashed:wght@300&family=Shippori+Antique+B1&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-height: 100vh;
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+}
+
+#home {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "aside navbar navbar navbar"
+    "aside about about about"
+    "aside services services services"
+    "aside works works works"
+    "aside contact contact contact"
+    "aside footer footer footer";
+    grid-template-columns: 4em;
+    grid-template-rows: 60% 5rem 1fr 1fr 1fr;
+    
+}
+
+aside {
+    grid-area: aside;
+    z-index: 1;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+#about {
+    grid-area: about;
+}
+
+#services {
+    grid-area: services;
+}
+
+#works {
+    grid-area: works;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.circle__list {
+    list-style-type: circle;
+}
+
+.square__list {
+    list-style-type: square;
+}
+
+.dash__list {
+    list-style-type: none;
+    &::before {
+        content: "-";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        grid-template-areas: 
+        "aside aside aside aside"
+        "header header header header"
+        "navbar navbar navbar navbar"
+        "about about about about"
+        "services services services services"
+        "works works works works"
+        "contact contact contact contact"
+        "footer footer footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 20% 5% auto;
+    }
+}
