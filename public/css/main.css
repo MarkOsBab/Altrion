@@ -37,7 +37,7 @@ body {
 
 #home {
   display: grid;
-  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside services services services" "aside works works works" "aside contact contact contact" "aside footer footer footer";
+  grid-template-areas: "header header header header" "aside navbar navbar navbar" "aside about about about" "aside services services services" "aside works works works" "aside steps steps steps" "aside contact contact contact" "aside footer footer footer";
   grid-template-columns: 4em;
   grid-template-rows: 60% 5rem 1fr 1fr 1fr; }
 
@@ -60,6 +60,9 @@ nav {
 #works {
   grid-area: works; }
 
+#steps {
+  grid-area: steps; }
+
 #contact {
   grid-area: contact; }
 
@@ -79,7 +82,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #home {
-    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "services services services services" "works works works works" "contact contact contact contact" "footer footer footer footer";
+    grid-template-areas: "aside aside aside aside" "header header header header" "navbar navbar navbar navbar" "about about about about" "services services services services" "works works works works" "steps steps steps steps" "contact contact contact contact" "footer footer footer footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% 5% auto; } }
 
@@ -550,6 +553,102 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.steps {
+  margin: 10rem 0; }
+  .steps__header {
+    background-color: var(--opposite-color);
+    color: var(--opposite-font-color);
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem; }
+    .steps__header h2 {
+      font-family: "Sansita Swashed", sans-serif;
+      font-size: 5em;
+      font-weight: bold; }
+    .steps__header p {
+      font-family: "Shippori Antique B1", sans-serif;
+      font-size: 1.3em; }
+  .steps__item__title {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    margin: 0 2rem; }
+    .steps__item__title h2 {
+      font-family: "Shippori Antique B1", sans-serif;
+      font-weight: bold;
+      font-size: 5em;
+      width: 34rem; }
+  .steps__item__box {
+    display: flex;
+    flex-direction: row-reverse; }
+  .steps__item__picture {
+    flex-basis: 50%; }
+    .steps__item__picture-image {
+      width: 100%; }
+  .steps__item__content {
+    flex-basis: 50%;
+    background-color: var(--opposite-color);
+    color: var(--opposite-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2rem 0;
+    font-family: "Shippori Antique B1", sans-serif; }
+    .steps__item__content h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 3em; }
+    .steps__item__content p {
+      font-size: 1.5em;
+      margin: 0 3rem; }
+
+@media screen and (max-width: 768px) {
+  .steps__item {
+    margin: 0 1rem; }
+    .steps__item__content h3 {
+      font-size: 2em; }
+    .steps__item__content p {
+      font-size: 1.3em; } }
+
+@media screen and (max-width: 480px) {
+  .steps__header {
+    height: 25rem; }
+    .steps__header h2 {
+      font-size: 3em; }
+    .steps__header p {
+      font-size: 1.1em;
+      text-align: center; }
+  .steps__item__title {
+    height: 15rem;
+    margin: auto; }
+    .steps__item__title h2 {
+      font-size: 3em;
+      text-align: center;
+      width: 100%; }
+  .steps__item__box {
+    flex-direction: column-reverse; }
+  .steps__item__picture img {
+    display: none; }
+  .steps__item__content {
+    text-align: center;
+    align-items: center;
+    height: 25rem;
+    flex-basis: auto;
+    gap: 3rem;
+    width: 35rem;
+    margin: 0 auto;
+    padding: 2rem; }
+    .steps__item__content h3 {
+      font-size: 1.7em;
+      margin: 0; }
+    .steps__item__content p {
+      font-size: 1.1em;
+      margin: 0; } }
 
 .contact {
   display: flex;

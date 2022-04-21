@@ -26,6 +26,7 @@ body {
     "aside about about about"
     "aside services services services"
     "aside works works works"
+    "aside steps steps steps"
     "aside contact contact contact"
     "aside footer footer footer";
     grid-template-columns: 4em;
@@ -56,6 +57,10 @@ nav {
 
 #works {
     grid-area: works;
+}
+
+#steps {
+    grid-area: steps;
 }
 
 #contact {
@@ -90,6 +95,7 @@ footer {
         "about about about about"
         "services services services services"
         "works works works works"
+        "steps steps steps steps"
         "contact contact contact contact"
         "footer footer footer footer";
         grid-template-columns: 1fr;

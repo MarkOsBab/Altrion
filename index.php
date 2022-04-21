@@ -81,7 +81,7 @@
     <nav class="navbar navbar--color">
       <ul class="container-box navbar__box">
         <div class="navbar__box__item navbar-list">
-          <li class="navbar-list__item">s
+          <li class="navbar-list__item">
             <a class="navbar-item" href="#"
               ><i class="fa-solid fa-house"></i> Inicio</a
             >
@@ -299,6 +299,100 @@
       </div>
     </section>
     <!-- End Our section -->
+
+    <!-- Steps section -->
+    <section class="steps" id="steps">
+        <div class="steps__header">
+            <h2>Nuestra forma de trabajo</h2>
+            <p>En Altrion nos destacamos por nuestro asesoramiento 
+                personalizado a la hora de desarrolar tu sitio</p>
+        </div>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Contacto y Asesoramiento</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/asesoramiento.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa inicial</h3>
+                    <p class="steps__item__description">Nos ponemos en contacto para desarrollar la idea general, el diseño del sitio, y las secciones que este necesite y que tipo de sitio va a necesitar (e-commerce, información)</p>
+                </div>
+            </div>
+        </article>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Diseño de tu sitio</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/diseña tu sitio.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa 2</h3>
+                    <p class="steps__item__description">Diseñamos el sitio de forma ilustrativa, dandole forma, haciendo uso de imágenes y paleta de colores para que quede adecuado a lo pactado. </p>
+                </div>
+            </div>
+        </article>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Maquetado de tu sitio</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/maquetado de tu sitio.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa 3</h3>
+                    <p class="steps__item__description">La tercera etapa consiste en maquetar el sitio, dandole funcionalidad y ordenando las ideas previamente coordinadas.</p>
+                </div>
+            </div>
+        </article>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Pre-entrega de tu sitio</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/preentrega.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa 4</h3>
+                    <p class="steps__item__description">La pre-entrega del sitio se entrega al cliente, donde éste puede corroborar la información, agregar ideas o realizar algunos cambios antes de que sea subido a la web. </p>
+                </div>
+            </div>
+        </article>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Entrega del proyecto final</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/proyectofinal.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa 5</h3>
+                    <p class="steps__item__description">Se elige un hosting del sitio, dependiendo las necesidades de cada cliente. Se carga en la web, listo para ser usado. Y completamente funcional.</p>
+                </div>
+            </div>
+        </article>
+        <article class="container-box steps__item">
+            <div class="steps__item__title">
+                <h2>Mantenimiento de tu sitio</h2>
+            </div>
+            <div class="steps__item__box">
+                <div class="steps__item__picture">
+                    <img src="./public/images/steps/mantenimiento.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                </div>
+                <div class="steps__item__content">
+                    <h3>Etapa Final</h3>
+                    <p class="steps__item__description">El mantenimiento del sitio será gratuito los primeros 2 meses luego de entregado.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- End steps section -->
 
     <!-- Contact section -->
     <section class="contact" id="contact">
