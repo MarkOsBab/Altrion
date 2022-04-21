@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php include './classes/class.consults.php'; ?>
+    <?php include './public/classes/class.consults.php'; ?>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -313,7 +313,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/asesoramiento.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/asesoramiento.jpg" class="steps__item__picture-image" alt="imagen-asesoramiento">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa inicial</h3>
@@ -327,7 +327,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/diseña tu sitio.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/design-site.jpg" class="steps__item__picture-image" alt="imagen-diseño-del-sitio">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa 2</h3>
@@ -341,7 +341,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/maquetado de tu sitio.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/maquetado-de-tu-sitio.jpg" class="steps__item__picture-image" alt="imagen-maquetado-del-sitio">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa 3</h3>
@@ -355,7 +355,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/preentrega.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/preentrega.jpg" class="steps__item__picture-image" alt="imagen-pre-entrega">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa 4</h3>
@@ -369,7 +369,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/proyectofinal.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/proyectofinal.jpg" class="steps__item__picture-image" alt="imagen-proyecto-final">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa 5</h3>
@@ -383,7 +383,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/mantenimiento.jpg" class="steps__item__picture-image" alt="Portfolio image">
+                    <img src="./public/images/steps/mantenimiento.jpg" class="steps__item__picture-image" alt="imagen-mantenimiento">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa Final</h3>
@@ -398,6 +398,9 @@
     <section class="contact" id="contact">
       <h2 class="contact__title"><i class="fa-solid fa-id-card"></i> Ponete en contacto</h2>
       <div class="contact__wrapper">
+        <picture class="contact__wrapper__picture">
+          <img class="contact__wrapper__picture--image" src="./public/images/contact/contact.png" alt="">
+        </picture>
         <form id="formContact">
           <div class="contact__wrapper__item">
             <input class="contact__wrapper__item__form" type="text" placeholder="E-mail" id="email" name="email">

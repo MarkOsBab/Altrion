@@ -72,7 +72,7 @@ function readContact(r) {
 
 function addContact(data){
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', './classes/class.consults.php?cAccion=doContact', true);
+    xhr.open('POST', './public/classes/class.consults.php?cAccion=doContact', true);
     xhr.onload = function(){
         if (this.status === 200){
             const reply = JSON.parse(xhr.responseText);
@@ -96,3 +96,9 @@ function addContact(data){
     xhr.send(data) // mandamos la conexion y los datos...
 }
 listenContact();
+
+document.addEventListener('dragstart', function(evt) {
+    if (evt.target.tagName == 'IMG') {
+      evt.preventDefault();
+    }
+  });

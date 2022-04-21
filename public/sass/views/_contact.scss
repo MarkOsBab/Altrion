@@ -22,6 +22,12 @@
         padding: 3rem;
         width: 50%;
         height: 50%;
+        &__picture {
+            flex-basis: 50%;
+            &--image{
+                width: 100%;
+            }
+        }
         &__item {
             display: flex;
             margin: 1rem;
@@ -67,12 +73,20 @@
 @media screen and (max-width: 1160px) {
     .contact {
         gap: 10rem;
+        &__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
 
 @media screen and (max-width: 960px) {
     .contact {
         gap: 1rem;
+        &__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -90,6 +104,8 @@
         &__wrapper {
             width: 100%;
             height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
             &__item {
                 width: 100%;
                 flex-direction: column;

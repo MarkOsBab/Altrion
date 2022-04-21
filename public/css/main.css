@@ -672,6 +672,10 @@ a {
     padding: 3rem;
     width: 50%;
     height: 50%; }
+    .contact__wrapper__picture {
+      flex-basis: 50%; }
+      .contact__wrapper__picture--image {
+        width: 100%; }
     .contact__wrapper__item {
       display: flex;
       margin: 1rem; }
@@ -709,11 +713,17 @@ a {
 
 @media screen and (max-width: 1160px) {
   .contact {
-    gap: 10rem; } }
+    gap: 10rem; }
+    .contact__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap; } }
 
 @media screen and (max-width: 960px) {
   .contact {
-    gap: 1rem; } }
+    gap: 1rem; }
+    .contact__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap; } }
 
 @media screen and (max-width: 780px) {
   .contact {
@@ -727,7 +737,9 @@ a {
       text-align: center; }
     .contact__wrapper {
       width: 100%;
-      height: auto; }
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap; }
       .contact__wrapper__item {
         width: 100%;
         flex-direction: column;
