@@ -81,7 +81,7 @@
     <nav class="navbar navbar--color">
       <ul class="container-box navbar__box">
         <div class="navbar__box__item navbar-list">
-          <li class="navbar-list__item">
+          <li class="navbar-list__item">s
             <a class="navbar-item" href="#"
               ><i class="fa-solid fa-house"></i> Inicio</a
             >
