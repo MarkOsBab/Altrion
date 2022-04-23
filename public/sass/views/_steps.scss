@@ -1,0 +1,132 @@
+.steps {
+    margin: 10rem 0;
+    &__header {
+        background-color: var(--opposite-color);
+        color: var(--opposite-font-color);
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        h2 {
+            font-family: $special-font;
+            font-size: 5em;
+            font-weight: bold;
+        }
+        p {
+            font-family: $primary-font;
+            font-size: 1.3em;
+        }
+    }
+    &__item {
+        &__title {
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            margin: 0 2rem;
+            h2 {
+                font-family: $primary-font;
+                font-weight: bold;
+                font-size: 5em;
+                width: 34rem;
+            }
+        }
+        &__box {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        &__picture {
+            flex-basis: 50%;
+            &-image {
+                width: 100%;
+            }
+        }
+        &__content {
+            flex-basis: 50%;
+            background-color: var(--opposite-color);
+            color: var(--opposite-font-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6rem;
+            padding: 2rem 0;
+            font-family: $primary-font;
+            h3 {
+                display: flex;
+                justify-content: center;
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.5em;
+                margin: 0 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .steps__item {
+        margin: 0 1rem;
+        &__content {
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .steps {
+        &__header {
+            height: 25rem;
+            h2 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+        &__item {
+            &__title {
+                height: 15rem;
+                margin: auto;
+                h2 {
+                    font-size: 3em;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            &__box {
+                flex-direction: column-reverse;
+            }
+            &__picture {
+                img {
+                    display: none;
+                }
+            }
+            &__content {
+                text-align: center;
+                align-items: center;
+                height: 25rem;
+                flex-basis: auto;
+                gap: 3rem;
+                width: 35rem;
+                margin: 0 auto;
+                padding: 2rem;
+                h3 {
+                    font-size: 1.7em;
+                    margin: 0;
+                }
+                p {
+                    font-size: 1.1em;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.display-row {
+    display: flex;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-box {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.titles {
+    transform: translateX(-0.75em);
+    transition: transform 200ms;
+    &::before {
+        content: '#';
+        display: inline-block;
+        width: 0.75em;
+        color: $secondary-color;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    &:hover {
+        transform: none;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titles {
+        transform: none;
+        transition: none;
+        &::before {
+            content: none;
+            width: 0em;
+        }
+    }       
+}

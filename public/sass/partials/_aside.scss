@@ -1,0 +1,88 @@
+.aside {
+    background-color: var(--opposite-color);
+    position: fixed;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    &__box {
+        margin: 2rem 0;
+    }
+    &__item {
+        margin: 1em 0;
+        &__switch {
+            display: flex;
+            align-items: center;
+            &__label {
+                display: inline-block;
+                position: relative;
+                width: 3rem;
+                height: 1.7rem;
+            }
+            &__input {
+                display: none;
+                &:checked + .aside__item__switch--slider {
+                    background-color: var(--bg-color);
+                }
+                &:checked + .aside__item__switch--slider:before {
+                    transform: translateX(4px);
+                }
+            }
+            &--slider {
+                background-color: var(--bg-color);
+                width: 3.5rem;
+                height: 1.5rem;
+                bottom: 0;
+                cursor: pointer;
+                left: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: .5s;
+                &:before {
+                    background-color: var(--opposite-color);
+                    bottom: .4rem;
+                    content: '';
+                    left: .4rem;
+                    position: absolute;
+                    transition: .5s;
+                    width: .7rem;
+                    height: .7rem;
+                }
+            }
+            &--round {
+                border-radius: 1.3rem;
+                &::before {
+                    border-radius: 1.3rem;
+                }
+            }
+            &--icon {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 100%;
+                font-size: 1.3rem;
+                padding-right: .3rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .aside {
+        position: relative;
+        height: auto;
+        top: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        &__box {
+            display: flex;
+        }
+        &__item {
+            margin: 0 1rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.works {
+    margin: 3rem 0;
+    &__box {
+        background-color: var(--opposite-color);
+        color: var(--opposite-font-color);
+        width: 70%;
+        margin-left: auto;
+    }
+    &__title {
+        font-family: $primary-font;
+        color: var(--opposite-font-color);
+        font-size: 5em;
+        padding: 3rem 0;
+        margin: 0 2rem;
+        text-align: right;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
