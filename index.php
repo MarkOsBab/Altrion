@@ -382,7 +382,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/mantenimiento.jpg" class="steps__item__picture-image" alt="imagen-mantenimiento">
+                    <img src="./public/images/steps/mantenimiento.png" class="steps__item__picture-image" alt="imagen-mantenimiento">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa Final</h3>
