@@ -102,13 +102,18 @@
             >
           </li>
           <li class="navbar-list__item">
-            <a class="navbar-item" href="#contact"
-              ><i class="fa-solid fa-address-card"></i> Contacto</a
+            <a class="navbar-item" href="#steps"
+              ><i class="fa-solid fa-code-fork"></i> ¿Cómo trabajamos?</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#team"
               ><i class="fa-solid fa-laptop-code"></i> Equipo</a
+            >
+          </li>
+          <li class="navbar-list__item">
+            <a class="navbar-item" href="#contact"
+              ><i class="fa-solid fa-address-card"></i> Contacto</a
             >
           </li>
         </div>
@@ -288,12 +293,25 @@
     <!-- Our section -->
     <section class="works" id="works">
       <div class="works__box">
-        <h2 class="works__title">Nuestros trabajos realizados</h2>
+        <h2 class="works__box__title">Nuestros trabajos realizados</h2>
+        <p class="works__box__title--sub">Estos son algunos de nuestros trabajos previamente realizados</p>
       </div>
       <div class="container-box">
         <div class="works__wrapper">
           <div class="works__wrapper__items">
-
+            <a class="works__wrapper__items--link" href="#e-commerce">E-Commerce</a>
+          </div>
+          <div class="works__wrapper__items">
+            <a class="works__wrapper__items--link" href="#portafolios">Portafolios</a>
+          </div>
+          <div class="works__wrapper__items">
+            <a class="works__wrapper__items--link" href="#landing-pages">Landing pages</a>
+          </div>
+          <div class="works__wrapper__items">
+            <a class="works__wrapper__items--link" href="#dashboards">Dashboards</a>
+          </div>
+          <div class="works__wrapper__items">
+            <a class="works__wrapper__items--link" href="#server-side">Server-side</a>
           </div>
         </div>
       </div>
@@ -383,7 +401,7 @@
             </div>
             <div class="steps__item__box">
                 <div class="steps__item__picture">
-                    <img src="./public/images/steps/mantenimiento.jpg" class="steps__item__picture-image" alt="imagen-mantenimiento">
+                    <img src="./public/images/steps/mantenimiento.png" class="steps__item__picture-image" alt="imagen-mantenimiento">
                 </div>
                 <div class="steps__item__content">
                     <h3>Etapa Final</h3>
@@ -393,6 +411,12 @@
         </article>
     </section>
     <!-- End steps section -->
+
+    <!-- Team section -->
+    <section class="team" id="team">
+      <h2>Equipo</h2>
+    </section>
+    <!-- End team section -->
 
     <!-- Contact section -->
     <section class="contact" id="contact">

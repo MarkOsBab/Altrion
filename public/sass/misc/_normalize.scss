@@ -27,6 +27,7 @@ body {
     "aside services services services"
     "aside works works works"
     "aside steps steps steps"
+    "aside team team team"
     "aside contact contact contact"
     "aside footer footer footer";
     grid-template-columns: 4em;
@@ -63,6 +64,10 @@ nav {
     grid-area: steps;
 }
 
+#team {
+    grid-area: team;
+}
+
 #contact {
     grid-area: contact;
 }
@@ -96,6 +101,7 @@ footer {
         "services services services services"
         "works works works works"
         "steps steps steps steps"
+        "team team team team"
         "contact contact contact contact"
         "footer footer footer footer";
         grid-template-columns: 1fr;
