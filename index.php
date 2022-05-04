@@ -128,7 +128,7 @@
       <div class="container-box about__box" id="about">
         <h2 class="about__title">En Altrion</h2>
         <p class="about__content">
-          Tenemos la filosofía que, todo negocio debría estar en internet
+          Tenemos la filosofía que, todo negocio debería estar en internet
         </p>
 
         <div class="container-box">
@@ -185,7 +185,7 @@
             <div class="services__item__content">
               <h2 class="services__item__content--title">Responsive</h2>
               <p class="services__item__content--description">
-                - Tu sitio web adaptado a todos los dispositivos del mundo
+                 Tu sitio web adaptado a todos los dispositivos del mundo
                 <i class="fa-solid fa-earth-americas"></i>
               </p>
             </div>
@@ -208,7 +208,7 @@
             <div class="services__item__content">
               <h2 class="services__item__content--title">UX/UI</h2>
               <p class="services__item__content--description">
-                - La mejor experiencia con el interfaz de tu web y el diseño más
+                 La mejor experiencia con el interfaz de tu web y el diseño más
                 amigable para todos nuestros clientes
                 <i class="fa-solid fa-users"></i>
               </p>
@@ -246,7 +246,7 @@
             <div class="services__item__content">
               <h2 class="services__item__content--title">Hosting & Dominios</h2>
               <p class="services__item__content--description">
-                - Tu sitio con el nombre de dominio que tu selecciones y la
+                 Tu sitio con el nombre de dominio que tu selecciones y la
                 calidad que nuestros clientes merecen
               </p>
             </div>
@@ -280,7 +280,7 @@
                 Panel de administración
               </h2>
               <p class="services__item__content--description">
-                - Ofrecemos un panel donde cada cliente podrá ver las
+                 Ofrecemos un panel donde cada cliente podrá ver las
                 estadísticas de su sitio en tiempo real
               </p>
             </div>

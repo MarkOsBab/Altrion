@@ -412,7 +412,8 @@ a {
     font-family: "Sansita Swashed", sans-serif; }
   .about__content {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.8em;
+    font-family: "Shippori Antique B1", sans-serif;
     color: var(--font-color);
     font-weight: 300; }
     .about__content span {
@@ -425,9 +426,11 @@ a {
     padding: 1rem 0; }
     .about__grid__box-content {
       font-family: "Shippori Antique B1", sans-serif;
-      font-size: 1.4em;
+      font-size: 1.5em;
       color: var(--opposite-font-color);
       margin: 0 3rem; }
+      .about__grid__box-content ul li {
+        margin: 1em; }
     .about__grid__image {
       min-width: 5em; }
       .about__grid__image-image {
@@ -583,7 +586,8 @@ a {
       font-weight: bold; }
     .steps__header p {
       font-family: "Shippori Antique B1", sans-serif;
-      font-size: 1.3em; }
+      font-family: "Shippori Antique B1", sans-serif;
+      font-size: 1.8em; }
   .steps__item__title {
     height: 20rem;
     display: flex;
