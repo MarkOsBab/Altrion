@@ -1,0 +1,18 @@
+.icon {
+    color: var(--opposite-font-color);
+    transition: all step-end;
+    &:hover {
+        animation-name: aside__icons;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.section-icon {
+    transition: all step-end;
+    &:hover {
+        animation-name: section__icon;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
