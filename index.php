@@ -463,7 +463,7 @@
           <div>
           <p>Front End Developer</p>
           </div>
-          <hr>
+          <hr>  
         </div>
         <div class= "team__card__social">
         <a href="https://github.com/patri-alonsodelrio"><i class="fa-brands fa-github fa-3x"></i></a>

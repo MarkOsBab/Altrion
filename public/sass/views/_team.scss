@@ -23,10 +23,11 @@
         margin: 0 auto;
         width: 85rem;
         height: 25rem;
-        background-color: var(--bg-color);
+        background-color: var(--opposite-color);
+        color: var(--opposite-font-color);
         margin-bottom: 6rem;
 
-        &__img {
+        &__img {    
             img {
                 height: 25rem;
             }
@@ -50,18 +51,18 @@
         }
 
         &__social {
-            background-color: var(--opposite-color);
+            background-color: var(--bg-color);
             padding: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
 
             .fa-github {
-                color: var(--bg-color);
+                color: var(--opposite-color);
             }
 
             .fa-linkedin {
-                color: var(--bg-color);
+                color: var(--opposite-color);
             }
         }
     }
