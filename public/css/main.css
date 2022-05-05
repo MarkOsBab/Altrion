@@ -666,7 +666,7 @@ a {
 .team__header {
   height: 30rem;
   background-color: var(--opposite-color);
-  color: white;
+  color: var(--opposite-font-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -684,7 +684,7 @@ a {
   margin: 0 auto;
   width: 85rem;
   height: 25rem;
-  background-color: #fff;
+  background-color: var(--bg-color);
   margin-bottom: 6rem; }
   .team__card__img img {
     height: 25rem; }
@@ -706,9 +706,9 @@ a {
     flex-direction: column;
     justify-content: space-around; }
     .team__card__social .fa-github {
-      color: #fff; }
+      color: var(--bg-color); }
     .team__card__social .fa-linkedin {
-      color: #fff; }
+      color: var(--bg-color); }
 
 @media screen and (max-width: 768px) {
   .team__card {
