@@ -499,8 +499,7 @@
           <hr>
         </div>
         <div class= "team__card__social">
-        <i class="fa-brands fa-github fa-3x"></i>
-        <i class="fa-brands fa-linkedin fa-3x"></i>
+        <a href="https://www.linkedin.com/in/luc%C3%ADa-micaela-garc%C3%ADa-fern%C3%A1ndez-a22027201/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
         </div>
       </div>
       </div>
