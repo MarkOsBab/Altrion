@@ -42,6 +42,11 @@
 @media screen and (max-width: 768px) {
     .header {
         background-size: cover;
-
+    }
+    .header__content__title__box {
+        display: none;
+    }
+    .header__content--title {
+        display: none;
     }
 }

@@ -89,9 +89,9 @@ footer {
 @media screen and (max-width: 768px) {
     #home {
         grid-template-areas: 
+        "navbar navbar navbar navbar"
         "aside aside aside aside"
         "header header header header"
-        "navbar navbar navbar navbar"
         "about about about about"
         "services services services services"
         "steps steps steps steps"
@@ -99,6 +99,6 @@ footer {
         "contact contact contact contact"
         "footer footer footer footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 5% 20% 5% auto;
+        grid-template-rows: 5% 0% 30% auto;
     }
 }

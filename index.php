@@ -79,40 +79,46 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar--color">
+    <a href="#" class="navbar__title">Altrion</a>
       <ul class="container-box navbar__box">
-        <div class="navbar__box__item navbar-list">
+        <div class="navbar__box__item navbar-list" id="myLinks">
           <li class="navbar-list__item">
             <a class="navbar-item" href="#"
-              ><i class="fa-solid fa-house"></i> Inicio</a
+              ><i class="fa-solid fa-house navbar-item--icon"></i> Inicio</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#about"
-              ><i class="fa-solid fa-users-gear"></i> Nosotros</a
+              ><i class="fa-solid fa-users-gear navbar-item--icon"></i> Nosotros</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#services"
-              ><i class="fa-solid fa-book"></i> Servicios</a
+              ><i class="fa-solid fa-book navbar-item--icon"></i> Servicios</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#steps"
-              ><i class="fa-solid fa-code-fork"></i> ¿Cómo trabajamos?</a
+              ><i class="fa-solid fa-code-fork navbar-item--icon"></i> ¿Cómo trabajamos?</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#team"
-              ><i class="fa-solid fa-laptop-code"></i> Equipo</a
+              ><i class="fa-solid fa-laptop-code navbar-item--icon"></i> Equipo</a
             >
           </li>
           <li class="navbar-list__item">
             <a class="navbar-item" href="#contact"
-              ><i class="fa-solid fa-address-card"></i> Contacto</a
+              ><i class="fa-solid fa-address-card navbar-item--icon"></i> Contacto</a
             >
           </li>
         </div>
       </ul>
+      <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <!-- End navbar -->
 
