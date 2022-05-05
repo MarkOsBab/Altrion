@@ -414,7 +414,96 @@
 
     <!-- Team section -->
     <section class="team" id="team">
-      <h2>Equipo</h2>
+      <div class="team__header">
+        <h2>Nuestro Equipo</h2>
+      </div>
+      <div class="cards">
+      <div class="team__card">
+        <div class= "team__card__img">
+          <img src="./public/images/team/Marcos1.png" alt="Marcos García - Fundador">
+        </div>
+        <div class="team__card__text">
+          <h3>Marcos García</h3>
+          <div>
+          <p>Front End Developer</p>
+          <p>Back End Developer</p>
+          </div>
+          <hr>
+          <p><strong> FUNDADOR</strong></p>
+        </div>
+        <div class= "team__card__social">
+        <a href="https://github.com/MarkOsBab/"><i class="fa-brands fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/markosbab/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+      <div class="team__card">
+        <div class= "team__card__img">
+          <img src="./public/images/team/Mati1.png" alt="Marcos García - Fundador">
+        </div>
+        <div class="team__card__text">
+          <h3>Matías Da Silva</h3>
+          <div>
+          <p>Front End Developer</p>
+          <p>Diseño UX/UI</p>
+          </div>
+          <hr>
+          <p><strong>CO-FUNDADOR</strong></p>
+        </div>
+        <div class= "team__card__social">
+        <a href="https://github.com/matidsc"><i class="fa-brands fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/matiasdasilva-178625212/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+      <div class="team__card">
+        <div class= "team__card__img">
+          <img src="./public/images/team/Patricio1.png" alt="Marcos García - Fundador">
+        </div>
+        <div class="team__card__text">
+          <h3>Patricio Alonso</h3>
+          <div>
+          <p>Front End Developer</p>
+          </div>
+          <hr>
+        </div>
+        <div class= "team__card__social">
+        <a href="https://github.com/patri-alonsodelrio"><i class="fa-brands fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/patricioalonso9/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+      <div class="team__card">
+        <div class= "team__card__img">
+          <img src="./public/images/team/Gianluca1.png" alt="Marcos García - Fundador">
+        </div>
+        <div class="team__card__text">
+          <h3>Gianluca Fava</h3>
+          <div>
+          <p>Front End Developer</p>
+          </div>
+          <hr>
+        </div>
+        <div class= "team__card__social">
+        <a href="https://github.com/Gianluca1796"><i class="fa-brands fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/gianlucafava/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+      <div class="team__card">
+        <div class= "team__card__img">
+          <img src="./public/images/team/Mica1.png" alt="Marcos García - Fundador">
+        </div>
+        <div class="team__card__text">
+          <h3>Micaela García</h3>
+          <div>
+          <p>Community Manager</p>
+          <p>Marketing</p>
+          </div>
+          <hr>
+        </div>
+        <div class= "team__card__social">
+        <i class="fa-brands fa-github fa-3x"></i>
+        <i class="fa-brands fa-linkedin fa-3x"></i>
+        </div>
+      </div>
+      </div>
     </section>
     <!-- End team section -->
 

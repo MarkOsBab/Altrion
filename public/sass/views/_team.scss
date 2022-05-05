@@ -1,0 +1,112 @@
+.team {
+    &__header {
+        height: 30rem;
+        background-color: var(--opposite-color);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        margin-bottom: 7rem;
+
+        h2 {
+            font-family: $special-font;
+            font-size: 5em;
+            font-weight: bold;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 85rem;
+        height: 25rem;
+        background-color: #fff;
+        margin-bottom: 6rem;
+
+        &__img {
+            img {
+                height: 25rem;
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 1.8em;
+            font-family: $primary-font;
+
+            h3 {
+                font-weight: 600;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        &__social {
+            background-color: var(--opposite-color);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .fa-github {
+                color: #fff;
+            }
+
+            .fa-linkedin {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team__card {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: 500px 500px;
+        justify-content: center;
+
+    }
+    .team {
+        margin-bottom: 20rem;
+        &__card {
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            &__text{
+                line-height: 2em;
+                font-size: 1.4em;
+            }
+            &__img {
+                img {
+                    width: 220px;
+                }
+            }
+            &__social{
+                width: 220px;
+                flex-direction: row;
+            }
+        }
+    }
+}
+@media screen and (max-width: 478px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 170px;
+    }
+} 
