@@ -459,7 +459,7 @@
           <img src="./public/images/team/Patricio1.png" alt="Marcos García - Fundador">
         </div>
         <div class="team__card__text">
-          <h3>Patricio Alonso</h3>
+          <h3>Patricio Alonso del Río</h3>
           <div>
           <p>Front End Developer</p>
           </div>
