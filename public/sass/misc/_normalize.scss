@@ -25,7 +25,6 @@ body {
     "aside navbar navbar navbar"
     "aside about about about"
     "aside services services services"
-    "aside works works works"
     "aside steps steps steps"
     "aside team team team"
     "aside contact contact contact"
@@ -54,10 +53,6 @@ nav {
 
 #services {
     grid-area: services;
-}
-
-#works {
-    grid-area: works;
 }
 
 #steps {
@@ -99,7 +94,6 @@ footer {
         "navbar navbar navbar navbar"
         "about about about about"
         "services services services services"
-        "works works works works"
         "steps steps steps steps"
         "team team team team"
         "contact contact contact contact"

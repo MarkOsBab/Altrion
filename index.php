@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php include './public/classes/class.consults.php'; ?>
+    <?php //include './public/classes/class.consults.php'; ?>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,11 +94,6 @@
           <li class="navbar-list__item">
             <a class="navbar-item" href="#services"
               ><i class="fa-solid fa-book"></i> Servicios</a
-            >
-          </li>
-          <li class="navbar-list__item">
-            <a class="navbar-item" href="#works"
-              ><i class="fa-solid fa-code"></i> Trabajos</a
             >
           </li>
           <li class="navbar-list__item">
@@ -289,34 +284,6 @@
       </div>
     </section>
     <!-- End services section -->
-
-    <!-- Our section -->
-    <section class="works" id="works">
-      <div class="works__box">
-        <h2 class="works__box__title">Nuestros trabajos realizados</h2>
-        <p class="works__box__title--sub">Estos son algunos de nuestros trabajos previamente realizados</p>
-      </div>
-      <div class="container-box">
-        <div class="works__wrapper">
-          <div class="works__wrapper__items">
-            <a class="works__wrapper__items--link" href="#e-commerce">E-Commerce</a>
-          </div>
-          <div class="works__wrapper__items">
-            <a class="works__wrapper__items--link" href="#portafolios">Portafolios</a>
-          </div>
-          <div class="works__wrapper__items">
-            <a class="works__wrapper__items--link" href="#landing-pages">Landing pages</a>
-          </div>
-          <div class="works__wrapper__items">
-            <a class="works__wrapper__items--link" href="#dashboards">Dashboards</a>
-          </div>
-          <div class="works__wrapper__items">
-            <a class="works__wrapper__items--link" href="#server-side">Server-side</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Our section -->
 
     <!-- Steps section -->
     <section class="steps" id="steps">
