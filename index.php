@@ -438,7 +438,7 @@
       </div>
       <div class="team__card">
         <div class= "team__card__img">
-          <img src="./public/images/team/Mati1.png" alt="Marcos García - Fundador">
+          <img src="./public/images/team/Mati1.png" alt="Matías Da Silva - Co-fundador">
         </div>
         <div class="team__card__text">
           <h3>Matías Da Silva</h3>
@@ -456,7 +456,7 @@
       </div>
       <div class="team__card">
         <div class= "team__card__img">
-          <img src="./public/images/team/Patricio1.png" alt="Marcos García - Fundador">
+          <img src="./public/images/team/Patricio1.png" alt="Patricio Alonso del Río - Front End Developer">
         </div>
         <div class="team__card__text">
           <h3>Patricio Alonso del Río</h3>
@@ -472,7 +472,7 @@
       </div>
       <div class="team__card">
         <div class= "team__card__img">
-          <img src="./public/images/team/Gianluca1.png" alt="Marcos García - Fundador">
+          <img src="./public/images/team/Gianluca1.png" alt="Gianluca Fava - Front End Developer">
         </div>
         <div class="team__card__text">
           <h3>Gianluca Fava</h3>
@@ -488,7 +488,7 @@
       </div>
       <div class="team__card">
         <div class= "team__card__img">
-          <img src="./public/images/team/Mica1.png" alt="Marcos García - Fundador">
+          <img src="./public/images/team/Mica1.png" alt="Micaela García - Community Manager">
         </div>
         <div class="team__card__text">
           <h3>Micaela García</h3>
